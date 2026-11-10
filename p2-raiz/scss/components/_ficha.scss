@@ -9,6 +9,7 @@
 @use "../tokens" as *;
 
 .hueco-ficha {
+ container-type: inline-size;
   margin-bottom: $space-xl;
 }
 
