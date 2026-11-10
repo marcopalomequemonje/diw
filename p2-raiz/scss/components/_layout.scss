@@ -18,6 +18,18 @@
   "principal"
   "consejos"
   "pie";
+  @include desde($bp-md){
+    grid-template-columns: 1fr 18rem;
+    grid-template-areas:
+    "cabecera cabecera"
+    "heroe heroe"
+    "principal consejos"
+    "pie pie";
+  }
+   @include desde($bp-md) {
+    max-width: 75rem;
+    margin-inline: auto;
+  }
 }
 
 //CREAR CABECERA
