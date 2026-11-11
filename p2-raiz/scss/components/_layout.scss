@@ -18,6 +18,7 @@
     "principal"
     "consejos"
     "pie";
+
   @include desde($bp-md) {
     grid-template-columns: 1fr 18rem;
     grid-template-areas:
@@ -26,20 +27,23 @@
       "principal consejos"
       "pie pie";
   }
+
   @include desde($bp-lg) {
     max-width: 75rem;
     margin-inline: auto;
   }
 }
 
-//CREAR CABECERA
+// CREAR CABECERA
 .cabecera {
   grid-area: cabecera;
 }
-//CREAR HEROE
+
+// CREAR HEROE
 .heroe {
   grid-area: heroe;
 }
+
 .principal {
   grid-area: principal;
   padding: clamp(1rem, 0.5rem + 2vw, 2.5rem); // 👀 A4 · relleno fluido (ya resuelto)
