@@ -6,7 +6,7 @@
     <title>Contacto · RAÍZ</title>
     <link rel="stylesheet" href="/src/tailwind.css" />
   </head>
-  <body>
+  <body class="bg-fondo text-texto">
     <!-- ✍️ B3 · Esta página va SOLO con Tailwind (src/tailwind.css), sin SASS. Ponle las clases de utilidad:
          los colores de RAÍZ (del @theme), dos columnas desde md y un botón con hover: y focus-visible:.
          Nada de valores sueltos entre corchetes ni style="". -->
@@ -20,9 +20,9 @@
     </header>
 
     <main>
-      <h1>Contacto</h1>
+      <h1 class="text-marca-oscuro">Contacto</h1>
 
-      <div>
+      <div class="grid md:grid-cols-2">
         <section aria-label="Dónde estamos">
           <h2>El vivero</h2>
           <p>Abrimos de lunes a sábado, de 9:00 a 14:00. Si vienes en persona, te ayudamos a elegir.</p>
@@ -42,7 +42,12 @@
             ¿En qué te ayudamos?
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
           </label>
-          <button type="submit">Enviar</button>
+          <button
+            class="bg-marca text-fondo hover:bg-marca-oscuro focus-visible:outline-2 focus-visible:outline-tierra"
+            type="submit"
+          >
+            Enviar
+          </button>
         </form>
       </div>
     </main>
