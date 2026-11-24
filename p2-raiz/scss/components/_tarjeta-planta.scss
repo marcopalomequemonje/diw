@@ -42,3 +42,8 @@
 .tarjeta-planta--agotada .tarjeta-planta__imagen {
   filter: grayscale(1);
 }
+
+.tarjeta-planta--agotada {
+  color: var(--color-marca-fuerte);
+  background: var(--color-fondo);
+}
